@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springweb
+  profiles:
+    include:
+      - private
+      
+server:
+   port: 8083

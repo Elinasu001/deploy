@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: mail
+  profiles:
+    include:
+      - private
+
+server:
+  port: 8082
+
