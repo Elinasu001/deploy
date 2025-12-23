@@ -9,5 +9,9 @@ public interface YogurtService {
 	YogurtEntity createEntity(YogurtEntity yogurt);
 	
 	List<YogurtEntity> getYourtEntities();
+
+	YogurtEntity findByid(Long id);
+
+	void deleteById(YogurtEntity entity);
 	
 }
