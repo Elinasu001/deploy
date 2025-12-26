@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: tdd
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@115.90.212.18:10000:XE
+    username: C##CL08
+    password: cl081234
+    dirver-class-name: oracle.jdbc.driver.OracleDriver
+
+
+server:
+  port: 8081
+
+  
