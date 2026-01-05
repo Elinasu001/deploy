@@ -4,6 +4,10 @@ spring:
   profiles:
     include:
       - private
+
+springdoc:
+  swagger-ui:
+    path: /ui.html
       
 server:
-   port: 8083
+   port: 8080

@@ -5,15 +5,25 @@ import java.time.LocalDateTime;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
+@Schema(description="공통")
 public class ResponseData<T> {
+	
+	@Schema(description="응답 메시지")
 	private String message;
+	
+	@Schema(description="데이터")
 	private Object data;
+	
+	@Schema(description="성공 여부")
 	private String success;
+	
+	@Schema(description="응답 시간")
 	private LocalDateTime localDateTime;
 
    private ResponseData(String message, Object data, String success, LocalDateTime localDateTime) {
